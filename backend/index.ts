@@ -5,10 +5,10 @@ const app = express();
 
 app.use(cors());
 
-app.get("/", (req, res) => {
+app.get("/api/message", (req, res) => {
   res.send("Hello Photosimple");
 });
 
 app.listen(4000, () => {
-  console.log("backend listening");
+  console.log("backend listening!");
 });

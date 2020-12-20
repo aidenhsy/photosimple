@@ -5,7 +5,7 @@ const HomeScreen = () => {
   const [message, setMessage] = useState("");
   useEffect(() => {
     const fetchData = async () => {
-      const { data } = await axios.get("http://localhost:4000");
+      const { data } = await axios.get("https://photosimple.com/api/message");
       setMessage(data);
     };
     fetchData();
